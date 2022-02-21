@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.ico" type="image/x-icon"> <!--link favicon-->
+    <title>Minha Segunda pagina</title>
+</head>
+<body>
+<h1>MINHA SEGUNDA PAGINA</h1>
+<P>Esta e minha segunda pagina. Para voltar a <a href="./index.html" rel="prev">pagina anterior</a></P>
+    <h1>"Links para download</h1>
+    <ul>
+        <li><a href="./icon.zip">Meu icon para download</a></li> <!--Download direto arquivos zips.-->
+    </ul>
+    <!--Abaixo estamos criando com 3 imagens diferentes para ser adptado automatico para celular tablet pc tv. (imagem tamanho 300x300 700x700 1000x1000)-->
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir essa pagina em outros dispositivos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="eImagem flxivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="./midia/musica001.mp3"controls ></audio> <!-- autoplay quando abrir a pagina ja comeca reproduzir o audio... mais nao funciona sempre-->
+    <!--maneira simples de por um audio.. pode ser incompativel com alguns navegadores.-->
+
+    <audio preload="metadata" controls loop>
+        <source src="./midia/musica001.mp3" type="audio/mpeg"> <!-- navegador vai tentar reproduzir este primeiro.-->
+        <source src="midia/musica001.ogg" type="audio/ogg">
+        <source src="midia/musica001.wav" type="audio/wav"> <!-- evitar usar esse.-->
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/musica001.mp3">clique aqui para baixar o arquivo MP3</a></p> <!--se o navegador nao conseguir carregar nem 1 dos 3 formatos aparece essa msg.-->
+    </audio>
+ <p><a href="pagina003.html" rel="next">PROXIMA PAGINA</a></p>
+</body>
+</html>

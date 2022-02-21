@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+        /* 
+        Nesta opçao a cima o min width e o max width e o maximo e o minimo do meu fundo main.
+        Nesta opçao img{ width; 100%;} a imagem se ajusta automaticamente. 
+        */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quo eos dolorum quos hic excepturi porro alias odio optio esse aliquid pariatur sed est, voluptatibus laborum id? Minus, nesciunt ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aliquam laboriosam. Aut laboriosam veritatis maiores commodi nobis dolor eius, libero obcaecati eaque quia. Veritatis porro ex ab, inventore fugit quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolor veritatis nostrum nulla reiciendis nam vel, veniam quia deserunt distinctio culpa nisi nemo amet voluptatum minus illum, quisquam praesentium recusandae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit amet animi itaque commodi earum corporis facere. Animi dolore corporis quisquam, nisi ratione ipsam quibusdam sed modi consectetur odio. Iure, rerum.</p>
+        <!--NESSA OPÇÃO A IMG SERA A FOTO COM TELA GRANDE. E A SOURCE SERA A IMAGEM PEQUENA QUANDO CHEGAR EM 000PX-->
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/dan-droids-pq.png">
+            <img src="imagens/dan-droids.png" alt="Droid">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quo eos dolorum quos hic excepturi porro alias odio optio esse aliquid pariatur sed est, voluptatibus laborum id? Minus, nesciunt ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aliquam laboriosam. Aut laboriosam veritatis maiores commodi nobis dolor eius, libero obcaecati eaque quia. Veritatis porro ex ab, inventore fugit quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolor veritatis nostrum nulla reiciendis nam vel, veniam quia deserunt distinctio culpa nisi nemo amet voluptatum minus illum, quisquam praesentium recusandae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit amet animi itaque commodi earum corporis facere. Animi dolore corporis quisquam, nisi ratione ipsam quibusdam sed modi consectetur odio. Iure, rerum.</p>
+    </main>
+</body>
+</html>

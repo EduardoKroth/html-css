@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        /* 
+            :visited = deixa o estilo programado quando a pessoa visitar o link.
+            :active  = deixa o estilo programado quando a pessoa clica  ou clica e segura em cima do link 
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(255, 153, 0);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blueviolet;
+        }
+        a::before {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(0, 4, 255);
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(4, 0, 255);
+        }
+        .especial {
+            background-color: rgb(196, 45, 45);
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <li><a href="https://www.google.com.br/"> Repositorio do GitHub</a></li>
+    <li><a href="https://www.google.com.br/"> Canal do Youtube</a></li>
+    <li class="especial"><a href="https://www.google.com.br/"> Site do Curso em video</a></li>
+    
+</body>
+</html>
